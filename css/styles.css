@@ -1,0 +1,75 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+.header{
+    align-items: center;
+}
+
+.header__text{
+    color: blue;
+    padding: 50px;
+    text-align: center;
+    font-size: 110px;
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+.header__link{
+    color: inherit;
+    font-family: Helvetica;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header__link a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.footer{
+    text-align: center;
+    color: inherit;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.footer a{
+    color: lightskyblue;
+    text-decoration: none;
+}
